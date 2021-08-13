@@ -1,8 +1,9 @@
-import React  from 'react'
-import Foodlist from './FoodList'
+import React, {useState}  from 'react'
 
 
 function MealForm({formData, setFormData}) {
+
+    const [reset, setReset] = useState("")
     
 
     function handleChange(e) {
@@ -22,6 +23,7 @@ function MealForm({formData, setFormData}) {
         })
         .then(res => res.json())
         .then(data => setFormData(data))
+        setFormData("")
     }
 
     return (
