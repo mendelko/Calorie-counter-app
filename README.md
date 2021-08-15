@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+# Project-2-Calorie-Counter-app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+User is able to login to his own account, and keep track of his calorie intake. It is then saved and he can view total calories eaten that day.
 
-In the project directory, you can run:
+## How to use the app
 
-### `npm start`
+Click login on the top of the page. Once you're logged in, the button to track the calories then appears on top of the page. Click that button and it redirects the user to the page where he/she can then type into the form the food item and calories for that food. It is then saved onto the right side of the page wher the user can view the food and total calories eaten. User also has the option to delete a preexisting food that was saved to the log.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Code Goals
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Using firebase, the user can log in to his own account. We set state for the mealForm.js file where the user is able to type into the search bar and then submit the food. We do that by creating a submit function using fetch to post onto the JSON server and set the current state. In the foodList.js file we use 'useEffect' to fetch the existing food and calories saved onto the JSON server and display it on the page. In foodItem.js we also created a function using fetch in case the user wants to delete a piece of food that was saved on the JSON server.
 
-### `npm test`
+## Conclusion
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+We used fetch 3 times. One to get the pre existing food, one to submit a new one and another to delete one. We set state for the input values and to display the food on the page. We now have a great working app with these very valuable react tools.

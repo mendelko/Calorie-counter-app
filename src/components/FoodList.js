@@ -42,7 +42,6 @@ function Foodlist({formData}) {
         <div className="foodlist">
             <span className="total_calories" >Total Calories You Ate: {getTotalCalories()}</span>
             <div className="food_list_header">
-                {/* <Delete onClick={() => setDltBtn(!DltBtn)} className="dltbtn"></Delete> */}
                 <h3 id="food_header">Food</h3>
                 <h3 id="calorie_header">Calories</h3>
             </div>

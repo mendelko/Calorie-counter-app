@@ -1,11 +1,8 @@
-import React, {useState}  from 'react'
+import React from 'react'
 
 
 function MealForm({formData, setFormData}) {
-
-    const [reset, setReset] = useState("")
     
-
     function handleChange(e) {
         setFormData({...formData, [e.target.name]: e.target.value})
     }

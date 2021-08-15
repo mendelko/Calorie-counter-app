@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import arrow from "./arrow.png"
 import firebase from "firebase";
@@ -7,12 +7,6 @@ import {auth} from "./fire";
 
 
 function Header() {
-
-    const [login, setLogin] = useState(false)
-
-    function handleClick(){
-        setLogin(!login)
-    }
 
     const history = useHistory()
     const url = window.location.href
@@ -37,7 +31,6 @@ function Header() {
          <>
          <div className="header">
              <div className="links">
-                {/* {url === "http://localhost:3000/main" ? <img className="arrow" onClick={takeHome} src={arrow} alt="back button"></img> : <Link to="/main">Track Your Calorie Intake</Link>} */}
                 {user && url !== "http://localhost:3000/main" ? <Link to="/main">Track Your Calorie Intake</Link> : null}
                 {url === "http://localhost:3000/main" && <img onClick={takeHome} className="arrow" src={arrow} alt="back button"></img>}
             </div>
