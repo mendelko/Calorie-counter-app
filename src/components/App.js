@@ -5,9 +5,6 @@ import Main from "./Main";
 
 function App() {
 
-  const [user] = useAuthState(auth)
-  console.log(user)
-
   return (
     <Router>
       <Switch>

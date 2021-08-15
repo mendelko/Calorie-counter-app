@@ -1,3 +1,9 @@
 {
-  "meals": []
+  "meals": [
+    {
+      "food": "apple",
+      "calories": "100",
+      "id": 1
+    }
+  ]
 }
